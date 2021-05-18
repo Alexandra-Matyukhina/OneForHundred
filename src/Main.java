@@ -8,7 +8,7 @@ public class Main {
         int bonusLimit = 1000;
         double totalBonus = 0;
 
-        if (payment >= bonusLimit) {
+        if (payment > bonusLimit) {
             totalBonus = (int) payment / bonusTerms * bonus;
         }
 
@@ -16,12 +16,6 @@ public class Main {
 
         double newBalance = balance + payment + totalBonus;
         System.out.println("New balance = " + newBalance);
-
-
-
-
-
-
 
 
     }
